@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('images/backimage1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 34px;
+            border-radius: 24px;
+            box-shadow: 0 5px15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus,
+        input[type="date"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .search-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+        </style>
+
+<div class="form-container">
+    <form action="#" method="get">
+        <div class="form-group">
+            <label for="Number">Number</label>
+            <input type="text" id="Number" name="Days" placeholder="Search by Number of days...">
+        </div>
+        <div class="form-group">
+            <label for="location of interest">Location of interest</label>
+            <input type="text" id="location" name="location" placeholder="Search by location...">
+        </div>
+        <div class="form-group">
+            <label for="Budget">Budget</label>
+            <input type="text" id="Budget" name="Budget" placeholder="Search by Budget...">
+        </div>
+        <div class="form-group">
+            <label for="checkInDate">Check-in Date</label>
+            <input type="date" id="checkInDate" name="checkInDate">
+        </div>
+        <div class="form-group">
+            <label for="checkOutDate">Check-out Date</label>
+            <input type="date" id="checkOutDate" name="checkOutDate">
+        </div>
+      <a href="details.html" class="search-button">Generate the Plan!!</a>
+    </form>
+</div>
+ </head>
+ </body> 
+</html>
